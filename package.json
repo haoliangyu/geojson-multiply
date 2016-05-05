@@ -11,8 +11,8 @@
     "url": "git+https://github.com/haoliangyu/geojson-multiply.git"
   },
   "keywords": [
-    "npm",
-    "starter"
+    "geojson",
+    "gis"
   ],
   "author": "Haoliang Yu <haholiang.yu@outlook.com>",
   "license": "MIT",
