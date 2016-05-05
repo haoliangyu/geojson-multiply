@@ -1,0 +1,29 @@
+{
+  "name": "npm-starter",
+  "version": "1.0.0",
+  "description": "project starter for npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haoliangyu/npm-starter.git"
+  },
+  "keywords": [
+    "npm",
+    "starter"
+  ],
+  "author": "Haoliang Yu <haholiang.yu@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haoliangyu/npm-starter/issues"
+  },
+  "homepage": "https://github.com/haoliangyu/npm-starter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.9.0",
+    "eslint-plugin-json": "^1.2.0",
+    "mocha": "^2.4.5"
+  }
+}
