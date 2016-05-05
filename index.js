@@ -1,4 +1,4 @@
-function multi(geojsons, options) {
+function multiply(geojsons, options) {
 
   if (Array.isArray(geojsons) && geojsons.length === 0) {
     return null;
@@ -42,11 +42,11 @@ function multi(geojsons, options) {
     result.geometry.coordinates.push(geojson.geometry.coordinates);
 
     if (onEachFeature) {
-      result.properties = onEachFeature(properties, geojson.properties);
+      result.properties = onEachFeature(properties, geojson.properties, i, geojsons);
     }
   }
 
   return result;
 }
 
-module.exports = multi;
+module.exports = multiply;

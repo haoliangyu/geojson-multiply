@@ -1,5 +1,5 @@
 var chai = require('chai');
-var multi = require('../index.js');
+var multiply = require('../index.js');
 var expect = chai.expect;
 
 describe('Multiply geojsons', function() {
@@ -23,18 +23,18 @@ describe('Multiply geojsons', function() {
   };
 
   it('It should return null if no geojson is provided.', function() {
-    var result = multi([]);
+    var result = multiply([]);
     expect(result).to.be.null;
   });
 
   it('It should return a Multi geometry feature if geojsons are given', function() {
-    var result = multi([geojsonA, geojsonB]);
+    var result = multiply([geojsonA, geojsonB]);
     expect(result.geometry.type).to.equal('MultiPoint');
     expect(result.geometry.coordinates.length).to.equal(2);
   });
 
   it('It should return null if input geojsons are of different types', function() {
-    var result = multi([geojsonA, geojsonC]);
+    var result = multiply([geojsonA, geojsonC]);
     expect(result).to.be.null;
   });
 
@@ -44,7 +44,7 @@ describe('Multiply geojsons', function() {
       return properties;
     };
 
-    var result = multi([geojsonA, geojsonB], {
+    var result = multiply([geojsonA, geojsonB], {
       properties: { count: 0 },
       onEachFeature: onEachFeature
     });
