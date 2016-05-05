@@ -5,7 +5,9 @@ Multiply single type geojsons into a multi type geojson
 
 ## Install
 
-`npm install geojson-multiply`
+```
+npm install geojson-multiply
+```
 
 ## How to Use
 
