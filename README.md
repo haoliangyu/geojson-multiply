@@ -33,6 +33,10 @@ Where,
 
     Similar to [reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
+If successes, the function will return a feature geojson with Multi geometry type.
+
+If fails, the function will return a `null`.
+
 ## Example
 
 ``` javascript
