@@ -52,4 +52,11 @@ describe('Multiply geojsons', function() {
     expect(result.properties.count).to.equal(10);
   });
 
+  it('It should return a multi type if a geojson feature collection is given', function() {
+    var geojson = { 'type': 'FeatureCollection', 'features': [geojsonA, geojsonB] };
+    var result = multiply(geojson);
+    expect(result.geometry.type).to.equal('MultiPoint');
+    expect(result.geometry.coordinates.length).to.equal(2);
+  });
+
 });

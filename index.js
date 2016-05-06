@@ -1,5 +1,13 @@
 function multiply(geojsons, options) {
 
+  if (!geojsons) {
+    return null;
+  }
+
+  if (geojsons.type === 'FeatureCollection') {
+    geojsons = geojsons.features;
+  }
+
   if (Array.isArray(geojsons) && geojsons.length === 0) {
     return null;
   }
