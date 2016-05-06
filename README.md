@@ -17,7 +17,7 @@ npm install geojson-multiply
 
 Where,
 
-* `geojson` - an array of geojson features
+* `geojson` - a geojson feauture, an array of geojson features, or a geojson feature collection
 
 * `options` - some additional options for property aggregation:
 
