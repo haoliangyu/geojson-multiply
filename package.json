@@ -1,6 +1,6 @@
 {
   "name": "geojson-multiply",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "project starter for npm package",
   "main": "index.js",
   "scripts": {
